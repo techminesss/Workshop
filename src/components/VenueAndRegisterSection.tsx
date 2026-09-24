@@ -20,7 +20,7 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
   const [phone, setPhone] = useState(registeredUser?.phone || '');
   const [college, setCollege] = useState(registeredUser?.college || '');
   const [degree, setDegree] = useState(registeredUser?.degree || '');
-  const [agreed, setAgreed] = useState(true);
+
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -49,10 +49,7 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
       return;
     }
 
-    if (!agreed) {
-      setError('You must confirm attendance and agree to the educational lab safety disclaimers.');
-      return;
-    }
+
 
     setIsSubmitting(true);
     setTimeout(() => {
@@ -61,7 +58,6 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
         phone: cleanPhone,
         college: college.trim(),
         degree: degree.trim(),
-        agreed: true,
         registeredAt: new Date().toISOString(),
       });
       setIsSubmitting(false);
@@ -180,7 +176,7 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
                       onClick={onViewPass}
                       className="w-full sm:w-auto px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-black text-xs uppercase tracking-wider cursor-pointer"
                     >
-                      View &amp; Print Pass
+                      View &amp; Download Pass
                     </button>
                     <button
                       onClick={() => onRegisterSubmit({} as any)}
@@ -275,21 +271,7 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
                     </div>
                   </div>
 
-                  {/* Checkbox */}
-                  <div className="pt-1">
-                    <label htmlFor="agreed" className="flex items-start gap-3 cursor-pointer select-none">
-                      <input
-                        id="agreed"
-                        type="checkbox"
-                        checked={agreed}
-                        onChange={(e) => setAgreed(e.target.checked)}
-                        className="mt-1 w-4 h-4 rounded border-zinc-700 bg-zinc-900 text-orange-500 focus:ring-orange-500 focus:ring-offset-0 cursor-pointer"
-                      />
-                      <span className="text-xs text-zinc-400 font-normal leading-relaxed">
-                        I agree to the educational lab safety disclaimers and confirm my physical attendance in Ludhiana.
-                      </span>
-                    </label>
-                  </div>
+
 
                   {/* Submit Button */}
                   <div className="pt-2">

@@ -3,7 +3,6 @@ export interface RegistrationData {
   phone: string;
   college: string;
   degree: string;
-  agreed: boolean;
   ticketId?: string;
   seatNumber?: number;
   registeredAt?: string;
