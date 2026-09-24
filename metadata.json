@@ -1,0 +1,6 @@
+{
+  "name": "CyberShield Ludhiana Workshop",
+  "description": "Hands-on Cyber Defense and Penetration Testing Masterclass in Ludhiana. Live attack simulations, practical syllabus, and student registration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
