@@ -196,7 +196,7 @@ export const FAQS: FaqItem[] = [
 
 export const ELIGIBILITY_POINTS = [
   {
-    title: 'BCA, MCA, B.Tech & IT Students',
+    title: 'BCA, MCA, B.Tech, IT and School Students',
     body: 'Move past dry college textbook theory and build actual resume-worthy practical offensive and defensive skills that tech recruiters actively scout for.',
     pill: 'Gain Practical Project Proof'
   },
