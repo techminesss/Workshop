@@ -98,22 +98,22 @@ export const MENTORS: Mentor[] = [
   {
     id: 'suraj',
     initials: 'SK',
-    name: 'Suraj Kumar',
+    name: 'Er. Suraj Kumar',
     role: 'Cyber Security Engineer',
     specialization: 'Specialization: Network Pen-Testing & Threat Intel',
     bio: 'With deep domain expertise in red teaming, Suraj has audited enterprise networks, intercepted critical perimeter vulnerabilities, and guided hundreds of engineers on navigating dark web threat landscapes and active attack vectors.',
-    badge: '6+ Years Field Experience • Red Team Specialist',
+    badge: '4+ Years Field Experience • Red Team Specialist',
     certifications: ['OSCP (Offensive Security Certified Professional)', 'CRTP (Active Directory)', 'CEH Master'],
     recentWork: 'Conducted red-team penetration tests for fintech banking infrastructures and conducted live threat reconnaissance.'
   },
   {
     id: 'vivek',
     initials: 'VK',
-    name: 'Vivek',
+    name: 'Vivek Kumar',
     role: 'Cyber Security Engineer',
     specialization: 'Specialization: AppSec & Vulnerability Management',
     bio: 'Vivek is an application security enthusiast obsessed with hunting business logic flaws, patch validation, and cloud workload hardening. He regularly leads hackathons and mentors students into full-time security analyst positions.',
-    badge: 'AppSec Strategist • 50+ Vulnerability Disclosures',
+    badge: 'AppSec Strategist • 3.5+ Years Field Experience',
     certifications: ['eWPTX (Web Application Penetration Tester)', 'AWS Certified Security Specialist', 'Security+'],
     recentWork: 'Discovered critical API & IDOR vulnerabilities in popular cloud services and authored automated AppSec pipelines.'
   }
