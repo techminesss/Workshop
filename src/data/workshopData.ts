@@ -109,7 +109,7 @@ export const MENTORS: Mentor[] = [
   {
     id: 'vivek',
     initials: 'VK',
-    name: 'Vivek Kumar',
+    name: 'Er. Vivek Kumar',
     role: 'Cyber Security Engineer',
     specialization: 'Specialization: AppSec & Vulnerability Management',
     bio: 'Vivek is an application security enthusiast obsessed with hunting business logic flaws, patch validation, and cloud workload hardening. He regularly leads hackathons and mentors students into full-time security analyst positions.',
