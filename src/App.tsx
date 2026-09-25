@@ -13,8 +13,11 @@ const TicketModal = lazy(() => import('./components/TicketModal').then(m => ({ d
 const ModuleDetailModal = lazy(() => import('./components/ModuleDetailModal').then(m => ({ default: m.ModuleDetailModal })));
 import { RegistrationData, SyllabusModule } from './types';
 
+const DISPLAY_SEAT_OFFSET = 40;
+
 export default function App() {
   const [seatsLeft, setSeatsLeft] = useState<number | null>(null);
+  const displaySeatsLeft = seatsLeft !== null ? Math.max(0, seatsLeft - DISPLAY_SEAT_OFFSET) : null;
 
   const [registeredUser, setRegisteredUser] = useState<RegistrationData | null>(() => {
     const saved = localStorage.getItem('techmines_registered_user');
@@ -135,7 +138,7 @@ export default function App() {
         onReserveClick={scrollToRegistration}
         registeredUser={registeredUser}
         onViewTicket={() => setIsTicketModalOpen(true)}
-        seatsLeft={seatsLeft}
+        seatsLeft={displaySeatsLeft}
       />
 
       {/* Main Content Sections */}
@@ -143,7 +146,7 @@ export default function App() {
         {/* Hero Section */}
         <HeroSection
           onReserveClick={scrollToRegistration}
-          seatsLeft={seatsLeft}
+          seatsLeft={displaySeatsLeft}
         />
 
         {/* Practical Syllabus Section (Light Contrast Theme) */}
@@ -166,7 +169,7 @@ export default function App() {
         {/* Offline Venue & Registration Section */}
         <VenueAndRegisterSection
           onRegisterSubmit={handleRegisterSubmit}
-          seatsLeft={seatsLeft}
+          seatsLeft={displaySeatsLeft}
           registeredUser={registeredUser}
           onViewPass={() => setIsTicketModalOpen(true)}
         />
