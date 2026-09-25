@@ -52,7 +52,7 @@ export default function App() {
   };
 
   const scrollToRegistration = () => {
-    const section = document.getElementById('venue');
+    const section = document.getElementById('registration-card');
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -70,7 +70,7 @@ export default function App() {
     try {
       const seatRef = doc(db, "meta", "seats");
       const newRegistrationRef = doc(collection(db, "registrations"));
-      
+
       let assignedSeat = 0;
 
       await runTransaction(db, async (transaction) => {
@@ -85,7 +85,7 @@ export default function App() {
         }
 
         assignedSeat = 50 - currentSeats + 1;
-        
+
         const completeData = {
           ...data,
           seatNumber: assignedSeat,
@@ -105,9 +105,9 @@ export default function App() {
 
       setRegisteredUser(localData);
       localStorage.setItem('techmines_registered_user', JSON.stringify(localData));
-      
+
       setSeatsLeft((prev) => (prev !== null ? Math.max(0, prev - 1) : 0));
-      
+
       setIsTicketModalOpen(true);
       showToast(`🎉 Seat #${assignedSeat} confirmed! Your official ticket has been generated.`);
     } catch (error: any) {
