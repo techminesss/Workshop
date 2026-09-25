@@ -119,53 +119,7 @@ export const MENTORS: Mentor[] = [
   }
 ];
 
-export const BONUSES: BonusItem[] = [
-  {
-    id: 1,
-    bonusNumber: 'BONUS #1',
-    title: 'Top 50 Practical Ethical Hacking Cheatsheets',
-    description: 'Curated payloads for SQLi, XSS vectors, Nmap terminal syntax shortcuts, and Linux privilege escalation command blocks.',
-    worth: 'Worth ₹3,500 — FREE',
-    category: 'Cheatsheets & Payloads',
-    contents: [
-      'Nmap Top 20 Port & OS Fingerprinting Scan One-Liners',
-      'Burp Suite Match & Replace Regex Rules for Header Spoofing',
-      'Linux /etc/sudoers Privilege Escalation Checklists',
-      'SQLi Authentication Bypass & Error-Based Vector Matrix',
-      'XSS Polyglot Payloads for WAF Bypass Testing'
-    ]
-  },
-  {
-    id: 2,
-    bonusNumber: 'BONUS #2',
-    title: 'Complete Bug Bounty & Kali Linux Setup Toolkit',
-    description: 'Step-by-step configuration manual for Burp Suite Professional, virtual machines, custom wordlists, and initial vulnerability reconnaissance scripts.',
-    worth: 'Worth ₹4,000 — FREE',
-    category: 'Software & Environment Scripts',
-    contents: [
-      'Pre-configured VirtualBox/VMware Kali Linux ISO Setup Blueprint',
-      'Burp Suite CA Certificate Root Installation Guide for Firefox & Android',
-      'Custom SecLists Selections: High-Probability Indian Educational Domains',
-      'Subdomain Enumeration Shell Script Pipeline (subfinder + httpx)',
-      'Automated Vulnerability Scanner Safe-Run Configuration'
-    ]
-  },
-  {
-    id: 3,
-    bonusNumber: 'BONUS #3',
-    title: 'Cyber Defense Career & Roadmap E-Book',
-    description: 'A comprehensive blueprint mapping certifications (Security+, CEH, OSCP), portfolio project repositories, and technical interview question sets.',
-    worth: 'Worth ₹3,000 — FREE',
-    category: 'Career & Interview Playbook',
-    contents: [
-      'Step-by-Step 6-Month Roadmap: From College Student to SOC Analyst L1',
-      'Certification ROI Breakdown: CompTIA vs CEH vs OSCP vs BJT',
-      'Top 75 Real Technical Interview Questions from Top Cybersecurity MNCs',
-      'GitHub Portfolio Template for Hands-on Home Lab Proof',
-      'Off-Campus Cyber Internship Application Strategy & Outreach Templates'
-    ]
-  }
-];
+
 
 export const FAQS: FaqItem[] = [
   {
