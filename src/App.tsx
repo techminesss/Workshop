@@ -40,7 +40,7 @@ export default function App() {
           setSeatsLeft(0);
         }
       } catch (e) {
-        console.error("Error fetching seats:", e);
+        if (import.meta.env.DEV) console.error("Error fetching seats:", e);
         setSeatsLeft(0);
       }
     };
@@ -118,7 +118,7 @@ export default function App() {
         showToast("Sorry, all seats are sold out!");
       } else {
         showToast("Error during registration. Please try again.");
-        console.error("Registration error:", error);
+        if (import.meta.env.DEV) console.error("Registration error:", error);
       }
     }
   };
