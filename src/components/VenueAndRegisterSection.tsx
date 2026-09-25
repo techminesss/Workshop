@@ -20,6 +20,7 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
   const [phone, setPhone] = useState(registeredUser?.phone || '');
   const [college, setCollege] = useState(registeredUser?.college || '');
   const [degree, setDegree] = useState(registeredUser?.degree || '');
+  const [agreed, setAgreed] = useState(false);
 
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -49,7 +50,10 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
       return;
     }
 
-
+    if (!agreed) {
+      setError('Please agree to the terms to proceed.');
+      return;
+    }
 
     setIsSubmitting(true);
     setTimeout(() => {
@@ -58,6 +62,7 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
         phone: cleanPhone,
         college: college.trim(),
         degree: degree.trim(),
+        agreed: true,
         registeredAt: new Date().toISOString(),
       });
       setIsSubmitting(false);
@@ -271,7 +276,19 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
                     </div>
                   </div>
 
-
+                  {/* Agreement Checkbox */}
+                  <div className="flex items-start gap-3">
+                    <input
+                      id="agreed"
+                      type="checkbox"
+                      checked={agreed}
+                      onChange={(e) => setAgreed(e.target.checked)}
+                      className="mt-1 w-4 h-4 accent-orange-500 cursor-pointer shrink-0"
+                    />
+                    <label htmlFor="agreed" className="text-xs text-zinc-400 leading-relaxed cursor-pointer">
+                      I agree to share my details for registration and confirm I am a college student.
+                    </label>
+                  </div>
 
                   {/* Submit Button */}
                   <div className="pt-2">
