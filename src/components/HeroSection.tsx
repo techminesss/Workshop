@@ -107,7 +107,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <span>DATE</span>
             </div>
             <div className="text-base sm:text-lg font-extrabold text-white leading-tight">
-              10 Oct, 2024
+              10 Oct, 2026
             </div>
             <div className="text-xs text-zinc-400 mt-1">
               Thursday Masterclass

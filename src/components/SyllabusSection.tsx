@@ -39,7 +39,7 @@ export const SyllabusSection: React.FC<SyllabusSectionProps> = ({
             PRACTICAL SYLLABUS
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-900 tracking-tight mb-4">
-            What You'll Learn in 3 Hands-On Hours
+            What You'll Learn in 2 Hands-On Hours
           </h2>
           <p className="text-base sm:text-lg text-zinc-600 font-normal leading-relaxed">
             Live attack simulations and real mitigation techniques conducted in safe, legal isolated sandboxes.

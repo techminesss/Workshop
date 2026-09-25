@@ -249,7 +249,7 @@ export const TicketModal: React.FC<TicketModalProps> = ({ user, isOpen, onClose 
             <div className="py-3 space-y-2 text-xs">
               <div className="flex items-center gap-2 text-zinc-300">
                 <Calendar className="w-3.5 h-3.5 text-orange-400 shrink-0" />
-                <span>Thursday, 10 Oct 2024</span>
+                <span>Thursday, 10 Oct 2026</span>
               </div>
               <div className="flex items-center gap-2 text-zinc-300">
                 <Clock className="w-3.5 h-3.5 text-orange-400 shrink-0" />

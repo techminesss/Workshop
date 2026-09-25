@@ -53,7 +53,7 @@ export const Footer: React.FC<FooterProps> = () => {
               <div className="flex items-start gap-2">
                 <Calendar className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
                 <span>
-                  Thursday, 10 October 2024 <br />
+                  Thursday, 10 October 2026 <br />
                   10:00 AM - 12:00 PM IST
                 </span>
               </div>
@@ -149,7 +149,7 @@ export const Footer: React.FC<FooterProps> = () => {
         {/* Legal & Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-500">
           <div>
-            © 2024 Techmines Ludhiana Workshop. All rights reserved. Certified under National Skills Initiative.
+            © 2026 Techmines Ludhiana Workshop. All rights reserved. Certified under National Skills Initiative.
           </div>
           <div className="flex items-center gap-6">
             <a href="#terms" onClick={(e) => { e.preventDefault(); alert("Techmines Ludhiana Terms: Strict educational sandbox testing only. No unlawful network intrusion is permitted."); }} className="hover:text-zinc-300 transition-colors">

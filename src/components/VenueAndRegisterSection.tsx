@@ -113,7 +113,7 @@ export const VenueAndRegisterSection: React.FC<VenueAndRegisterSectionProps> = (
                     Timing &amp; Date
                   </h4>
                   <p className="text-sm text-zinc-200 font-bold">
-                    Thursday, 10 October 2024
+                    Thursday, 10 October 2026
                   </p>
                   <p className="text-xs text-zinc-400">
                     10:00 AM - 12:00 PM IST (Reporting at 9:30 AM)
