@@ -36,7 +36,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Top Tag Pill */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-950/90 backdrop-blur-md border border-zinc-700/80 text-xs font-bold uppercase tracking-wider text-zinc-200 mb-8 shadow-xl">
           <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-          <span>FREE WORKSHOP • LUDHIANA • 30 SEPT</span>
+          <span>FREE WORKSHOP • LUDHIANA • 10 OCT</span>
         </div>
 
         {/* Big Display Headline */}
@@ -95,7 +95,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Urgency warning */}
         <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold text-zinc-300 mb-14 drop-shadow-md">
           <AlertTriangle className="w-4 h-4 text-orange-400 shrink-0" />
-          <span>Only {seatsLeft !== null ? seatsLeft : '...'} seats available. Registration closes 30 Sept, Midnight.</span>
+          <span>Only {seatsLeft !== null ? seatsLeft : '...'} seats available. Registration closes 10 Oct, Midnight.</span>
         </div>
 
         {/* 4 Meta Info Cards */}
@@ -107,10 +107,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <span>DATE</span>
             </div>
             <div className="text-base sm:text-lg font-extrabold text-white leading-tight">
-              30 Sept, 2024
+              10 Oct, 2024
             </div>
             <div className="text-xs text-zinc-400 mt-1">
-              Sunday Masterclass
+              Thursday Masterclass
             </div>
           </div>
 
@@ -121,10 +121,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <span>TIME</span>
             </div>
             <div className="text-base sm:text-lg font-extrabold text-white leading-tight">
-              10:00 AM - 1:00 PM
+              10:00 AM - 12:00 PM
             </div>
             <div className="text-xs text-zinc-400 mt-1">
-              3 Full Practical Hours
+              2 Full Practical Hours
             </div>
           </div>
 

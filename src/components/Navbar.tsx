@@ -67,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Top Pill Badge */}
           <div className="hidden md:flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-700/80 text-[11px] font-semibold text-zinc-300">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            <span className="tracking-wide">FREE WORKSHOP • LUDHIANA • 30 SEPT</span>
+            <span className="tracking-wide">FREE WORKSHOP • LUDHIANA • 10 OCT</span>
           </div>
         </div>
 

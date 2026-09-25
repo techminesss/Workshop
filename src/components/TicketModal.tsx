@@ -103,8 +103,8 @@ export const TicketModal: React.FC<TicketModalProps> = ({ user, isOpen, onClose 
     y += 16;
     ctx.fillStyle = '#e4e4e7';
     ctx.font = '12px sans-serif';
-    ctx.fillText('Sunday, 30 Sept 2024', pad, y);
-    ctx.fillText('10:00 AM – 1:00 PM', w / 2, y);
+    ctx.fillText('Thursday, 10 Oct 2026', pad, y);
+    ctx.fillText('10:00 AM – 12:00 PM', w / 2, y);
     y += 28;
 
     ctx.fillStyle = '#a1a1aa';
@@ -249,11 +249,11 @@ export const TicketModal: React.FC<TicketModalProps> = ({ user, isOpen, onClose 
             <div className="py-3 space-y-2 text-xs">
               <div className="flex items-center gap-2 text-zinc-300">
                 <Calendar className="w-3.5 h-3.5 text-orange-400 shrink-0" />
-                <span>Sunday, 30 Sept 2024</span>
+                <span>Thursday, 10 Oct 2024</span>
               </div>
               <div className="flex items-center gap-2 text-zinc-300">
                 <Clock className="w-3.5 h-3.5 text-orange-400 shrink-0" />
-                <span>10:00 AM – 1:00 PM</span>
+                <span>10:00 AM – 12:00 PM</span>
               </div>
               <div className="flex items-start gap-2 text-zinc-300">
                 <MapPin className="w-3.5 h-3.5 text-orange-400 shrink-0 mt-0.5" />

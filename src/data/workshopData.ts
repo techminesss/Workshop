@@ -140,7 +140,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Will I receive an official certificate?',
-    answer: 'Yes! Every attendee who attends the complete 3-hour practical session will receive an official Techmines Certificate of Participation to boost their LinkedIn profile and resume.'
+    answer: 'Yes! Every attendee who attends the complete 2-hour practical session will receive an official Techmines Certificate of Participation to boost their LinkedIn profile and resume.'
   },
   {
     question: 'Where exactly is the venue in Ludhiana?',

@@ -53,8 +53,8 @@ export const Footer: React.FC<FooterProps> = () => {
               <div className="flex items-start gap-2">
                 <Calendar className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
                 <span>
-                  Sunday, 30 September 2024 <br />
-                  10:00 AM - 2:00 PM IST
+                  Thursday, 10 October 2024 <br />
+                  10:00 AM - 12:00 PM IST
                 </span>
               </div>
               <div className="flex items-start gap-2">
@@ -129,7 +129,7 @@ export const Footer: React.FC<FooterProps> = () => {
                   if (navigator.share) {
                     navigator.share({
                       title: 'Techmines Ludhiana Workshop',
-                      text: 'Free hands-on ethical hacking masterclass in Ludhiana on 30 Sept. Register your seat!',
+                      text: 'Free hands-on ethical hacking masterclass in Ludhiana on 10 Oct. Register your seat!',
                       url: window.location.href,
                     }).catch(() => {});
                   } else {
