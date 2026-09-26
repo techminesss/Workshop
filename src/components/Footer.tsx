@@ -53,7 +53,7 @@ export const Footer: React.FC<FooterProps> = () => {
               <div className="flex items-start gap-2">
                 <Calendar className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
                 <span>
-                  Thursday, 10 October 2026 <br />
+                  Saturday, 10 October 2026 <br />
                   10:00 AM - 12:00 PM IST
                 </span>
               </div>

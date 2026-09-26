@@ -110,7 +110,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               10 Oct, 2026
             </div>
             <div className="text-xs text-zinc-400 mt-1">
-              Thursday Masterclass
+              Saturday Masterclass
             </div>
           </div>
 
